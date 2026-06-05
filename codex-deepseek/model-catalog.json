@@ -1,0 +1,40 @@
+{
+  "models": [
+    {
+      "slug": "deepseek-chat",
+      "display_name": "DeepSeek Chat",
+      "description": "DeepSeek non-reasoning chat/coding model via the local Codex DeepSeek bridge.",
+      "context_window": 64000,
+      "max_context_window": 64000,
+      "auto_compact_token_limit": 56000,
+      "input_modalities": ["text"],
+      "supported_reasoning_levels": [],
+      "default_reasoning_level": "none",
+      "apply_patch_tool_type": "function",
+      "shell_type": "shell_command",
+      "supports_parallel_tool_calls": false,
+      "visibility": "list",
+      "supported_in_api": true
+    },
+    {
+      "slug": "deepseek-reasoner",
+      "display_name": "DeepSeek Reasoner",
+      "description": "DeepSeek reasoning model via the local Codex DeepSeek bridge. Prefer DeepSeek Chat for tool-heavy editing turns.",
+      "context_window": 64000,
+      "max_context_window": 64000,
+      "auto_compact_token_limit": 56000,
+      "input_modalities": ["text"],
+      "supported_reasoning_levels": [
+        {"effort": "low", "description": "Shorter reasoning budget"},
+        {"effort": "medium", "description": "Balanced reasoning budget"},
+        {"effort": "high", "description": "Larger reasoning budget"}
+      ],
+      "default_reasoning_level": "medium",
+      "apply_patch_tool_type": "function",
+      "shell_type": "shell_command",
+      "supports_parallel_tool_calls": false,
+      "visibility": "list",
+      "supported_in_api": true
+    }
+  ]
+}
