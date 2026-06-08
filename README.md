@@ -39,3 +39,7 @@ codex
 ```
 
 Then ask Codex to read the project, make a small change, run tests, and summarize the diff.
+
+## Cloud delivery check
+
+This branch verifies that Codex can create a GitHub branch, update repository content, and deliver the change as a pull request.
