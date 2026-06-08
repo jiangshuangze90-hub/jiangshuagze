@@ -18,6 +18,12 @@ Expected output:
 Hello, Codex!
 ```
 
+## Install test dependencies
+
+```bash
+python -m pip install -r requirements-dev.txt
+```
+
 ## Run tests
 
 ```bash
